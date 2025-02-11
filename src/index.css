@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#1B1B1B] text-gray-100;
+  }
+}
+
+@layer utilities {
+  .glow {
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF;
+  }
+  
+  .neon-border {
+    box-shadow: 0 0 10px #00A8E8, 0 0 20px #00A8E8;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(45deg, #00A8E8, #00FFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
