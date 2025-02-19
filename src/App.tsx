@@ -27,6 +27,7 @@ const projects: Project[] = [
     technologies: ["Python", "PyTorch", "Transformers", "FastAPI"],
     videoUrl: "https://www.youtube.com/embed/your-video-id-2",
     githubUrl: "https://github.com/yourusername/nlp-chatbot",
+    demoUrl: "https://demo-url-2.com",
     icon: <Terminal className="w-6 h-6 text-accent" />
   },
   {
@@ -35,6 +36,7 @@ const projects: Project[] = [
     technologies: ["Scikit-learn", "Prophet", "Streamlit", "Pandas"],
     videoUrl: "https://www.youtube.com/embed/your-video-id-3",
     demoUrl: "https://demo-url-3.com",
+    githubUrl: "https://github.com/yourusername/analytics-dashboard",
     icon: <Database className="w-6 h-6 text-accent" />
   }
 ];
@@ -89,20 +91,20 @@ function App() {
           <span className="gradient-text">Featured Projects</span>
         </h2>
         
-        <div className="grid grid-cols-1 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} 
-              className="bg-dark-lighter rounded-2xl overflow-hidden border border-primary/20 hover:neon-border transition-all duration-500"
+              className="bg-dark-lighter rounded-2xl overflow-hidden border border-primary/20 hover:neon-border transition-all duration-500 flex flex-col h-full"
             >
-              <div className="p-8">
-                <h3 className="text-3xl font-bold mb-6 flex items-center gap-3">
+              <div className="p-6 flex flex-col h-full">
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
                   {project.icon}
                   <span className="gradient-text">{project.title}</span>
                 </h3>
-                <p className="text-gray-300 mb-6 text-lg">{project.description}</p>
+                <p className="text-gray-300 mb-4 text-sm flex-grow">{project.description}</p>
                 
                 {/* Video Section */}
-                <div className="aspect-video mb-8 rounded-xl overflow-hidden border border-accent/20">
+                <div className="aspect-video mb-4 rounded-xl overflow-hidden border border-accent/20">
                   <iframe
                     className="w-full h-full"
                     src={project.videoUrl}
@@ -113,12 +115,12 @@ function App() {
                 </div>
 
                 {/* Technologies */}
-                <div className="mb-6">
-                  <div className="flex flex-wrap gap-3">
+                <div className="mb-4">
+                  <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-4 py-2 bg-primary/10 text-accent rounded-full text-sm border border-primary/30
+                        className="px-3 py-1 bg-primary/10 text-accent rounded-full text-xs border border-primary/30
                           hover:bg-primary/20 transition-colors duration-300"
                       >
                         {tech}
@@ -127,23 +129,23 @@ function App() {
                   </div>
                 </div>
 
-                {/* Links */}
-                <div className="flex gap-6">
+                {/* Project Links */}
+                <div className="flex gap-4 mt-auto pt-4 border-t border-primary/20">
                   {project.githubUrl && (
                     <a
                       href={project.githubUrl}
-                      className="flex items-center gap-2 text-gray-300 hover:text-accent transition-colors duration-300"
+                      className="flex items-center gap-2 text-gray-300 hover:text-accent transition-colors duration-300 text-sm bg-primary/10 px-4 py-2 rounded-lg border border-primary/30 hover:border-accent/50"
                     >
-                      <Github className="w-5 h-5" />
+                      <Code2 className="w-4 h-4" />
                       View Code
                     </a>
                   )}
                   {project.demoUrl && (
                     <a
                       href={project.demoUrl}
-                      className="flex items-center gap-2 text-gray-300 hover:text-accent transition-colors duration-300"
+                      className="flex items-center gap-2 text-gray-300 hover:text-accent transition-colors duration-300 text-sm bg-primary/10 px-4 py-2 rounded-lg border border-primary/30 hover:border-accent/50"
                     >
-                      <ExternalLink className="w-5 h-5" />
+                      <ExternalLink className="w-4 h-4" />
                       Live Demo
                     </a>
                   )}
