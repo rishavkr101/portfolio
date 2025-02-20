@@ -67,15 +67,15 @@ function App() {
               Crafting intelligent solutions at the intersection of artificial intelligence and machine learning
             </p>
             <div className="flex space-x-6">
-              <a href="https://github.com/yourusername" 
+              <a href="https://github.com/rishavkr101" 
                 className="transform hover:scale-110 transition-all duration-300 hover:text-accent">
                 <Github className="w-8 h-8" />
               </a>
-              <a href="https://linkedin.com/in/yourusername" 
+              <a href="https://www.linkedin.com/in/rishav-kumar-228942272/" 
                 className="transform hover:scale-110 transition-all duration-300 hover:text-accent">
                 <Linkedin className="w-8 h-8" />
               </a>
-              <a href="mailto:your.email@example.com" 
+              <a href="mailto:rishavroy39rk@example.com" 
                 className="transform hover:scale-110 transition-all duration-300 hover:text-accent">
                 <Mail className="w-8 h-8" />
               </a>
