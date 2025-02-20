@@ -13,12 +13,12 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "AI Image Recognition System",
-    description: "Developed a deep learning model using TensorFlow and CNN architecture to classify images with 95% accuracy. Implemented transfer learning using ResNet50.",
-    technologies: ["Python", "TensorFlow", "OpenCV", "Flask"],
+    title: "Equity Research Chat Tool",
+    description: "Developed an equity research tool using Python, Streamlit, and LangChain that indexes financial news with a robust custom Q&A chain for efficient semantic search.",
+    technologies: ["Langchain", "HuggingFace", "Faiss", "NLP"],
     videoUrl: "https://www.youtube.com/embed/your-video-id-1",
-    githubUrl: "https://github.com/yourusername/image-recognition",
-    demoUrl: "https://demo-url-1.com",
+    githubUrl: "https://github.com/rishavkr101/Equity_Reserach_Tool",
+    demoUrl: "https://rishavkr101-equity-reserach-tool-app-6ljxxu.streamlit.app/",
     icon: <Brain className="w-6 h-6 text-accent" />
   },
   {
@@ -160,7 +160,7 @@ function App() {
       <footer className="bg-dark-lighter text-gray-300 py-12 border-t border-primary/20">
         <div className="container mx-auto px-6 text-center">
           <p className="text-lg">
-            © 2024 Your Name. Crafted with <span className="text-accent">♦</span> and AI
+            © 2024 Rishav kumar <span className="text-accent">♦</span> 
           </p>
         </div>
       </footer>
