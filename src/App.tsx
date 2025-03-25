@@ -22,21 +22,21 @@ const projects: Project[] = [
     icon: <Brain className="w-6 h-6 text-accent" />
   },
   {
-    title: "Natural Language Processing Chatbot",
-    description: "Built an intelligent chatbot using BERT and transformers for natural language understanding. Handles multiple intents and provides contextual responses.",
-    technologies: ["Python", "PyTorch", "Transformers", "FastAPI"],
+    title: "Potato Disease Classification",
+    description: "Farmers face significant economic losses and crop waste every year due to various potato plant diseases. We propose using CNN-based image classification to detect these diseases from images.",
+    technologies: ["Python",  "Tf-serving", "FastAPI"],
     videoUrl: "https://www.youtube.com/embed/your-video-id-2",
-    githubUrl: "https://github.com/yourusername/nlp-chatbot",
+    githubUrl: "https://github.com/rishavkr101/Potato-Disease-Classification",
     demoUrl: "https://demo-url-2.com",
     icon: <Terminal className="w-6 h-6 text-accent" />
   },
   {
-    title: "Predictive Analytics Dashboard",
-    description: "Created a machine learning pipeline for time series forecasting with interactive visualizations and real-time predictions.",
-    technologies: ["Scikit-learn", "Prophet", "Streamlit", "Pandas"],
+    title: "Audio_Classification",
+    description: " This project is about developing a deep learning model to automatically recognise and categorise different sounds based on their extracted features.",
+    technologies: ["Tensor-flow", "ANN", "Multi-class Classification"],
     videoUrl: "https://www.youtube.com/embed/your-video-id-3",
     demoUrl: "https://demo-url-3.com",
-    githubUrl: "https://github.com/yourusername/analytics-dashboard",
+    githubUrl: "https://github.com/rishavkr101/Audio-Classification_DeepLearning_project",
     icon: <Database className="w-6 h-6 text-accent" />
   }
 ];
